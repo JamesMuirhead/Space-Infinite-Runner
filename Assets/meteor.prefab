@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8430540242212623348}
   - component: {fileID: 6095089504495879393}
   - component: {fileID: 4090775608229592384}
-  - component: {fileID: 1562793398469296245}
   m_Layer: 0
   m_Name: meteor
   m_TagString: Untagged
@@ -126,21 +125,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.43301266
   m_Center: {x: 0, y: 0.36749998, z: 0}
---- !u!114 &1562793398469296245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8070371224722059809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 0, g: 0.32018876, b: 1, a: 1}
-  outlineWidth: 5
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []

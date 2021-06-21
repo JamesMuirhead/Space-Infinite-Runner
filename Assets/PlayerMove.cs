@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed, offset;
+    public SpawnControl spawnControl;
     private float minX, maxX, minY, maxY;
 
     // Start is called before the first frame update
@@ -14,10 +15,12 @@ public class PlayerMove : MonoBehaviour
         Vector2 bottomCorner = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, camDistance));
         Vector2 topCorner = Camera.main.ViewportToWorldPoint(new Vector3(1, 1, camDistance));
 
-        minX = bottomCorner.x - 1;
-        maxX = topCorner.x + 1;
-        minY = bottomCorner.y - 3;
-        maxY = topCorner.y - 1;
+        minX = bottomCorner.x;
+        maxX = topCorner.x;
+        minY = bottomCorner.y;
+        maxY = topCorner.y;
+
+        spawnControl.StartSpawning(bottomCorner, topCorner);
     }
 
     // Update is called once per frame
