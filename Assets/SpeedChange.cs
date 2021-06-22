@@ -15,8 +15,15 @@ public class SpeedChange : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
-            MeteorMove.gameSpeed -= 1;
+            for(int i = 0; i < 5; i++)
+            {
+                yield return new WaitForSeconds(5f);
+                MeteorMove.gameSpeed -= 1;
+                Debug.Log(MeteorMove.gameSpeed);
+            }
+            
+            yield return new WaitForSeconds(-1 * MeteorMove.gameSpeed);
+            Debug.Log("Yeet");
         }
 
     }

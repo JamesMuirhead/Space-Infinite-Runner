@@ -26,6 +26,17 @@ public class SpawnControl : MonoBehaviour
 
         while (true)
         {
+            float zPos = 20;
+
+            for(int i = 0; i < 5; i++)
+            {
+                spawnPos = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), zPos);
+                rockScale = Random.Range(1, 6);
+                GameObject newRock = Instantiate(rockPrefab, spawnPos, transform.rotation, transform);
+                newRock.transform.localScale = new Vector3(rockScale, rockScale, rockScale);
+                zPos += 10f;
+            }
+            
             while(transform.childCount < waveSize)
             {
                 spawnPos = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY), transform.position.z);
