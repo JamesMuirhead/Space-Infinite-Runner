@@ -43,4 +43,9 @@ public class UIControl : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

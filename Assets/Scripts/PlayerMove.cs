@@ -16,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicPlayer>().PlayMusic();
         Cursor.visible = false;
         
         float camDistance = Vector3.Distance(transform.position, Camera.main.transform.position);
