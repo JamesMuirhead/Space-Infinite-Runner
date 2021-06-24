@@ -296,6 +296,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3238c9db0fc714c9062bab73685b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1005313634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4175192803640265504, guid: a032b5b92fb7beb4ba7393fe2ba97633, type: 3}
+  m_PrefabInstance: {fileID: 4175192803418175028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!170 &1005313638
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005313634}
+  m_Enabled: 1
+  m_DistortionLevel: 0.2
+--- !u!167 &1005313639
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005313634}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 26
+  m_Room: -1000
+  m_RoomHF: -151
+  m_DecayTime: 7.56
+  m_DecayHFRatio: 0.91
+  m_Reflections: -626
+  m_ReflectionsDelay: 0.02
+  m_Reverb: 774
+  m_ReverbDelay: 0.03
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &1127929056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1178,10 @@ PrefabInstance:
       propertyPath: text1
       value: 
       objectReference: {fileID: 1831548450}
+    - target: {fileID: 392953717878766740, guid: 0cbc57367601b844baa52558bdbe5bee, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 2194505018306335456, guid: 0cbc57367601b844baa52558bdbe5bee, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1273,6 +1315,10 @@ PrefabInstance:
     - target: {fileID: 4175192803640265504, guid: a032b5b92fb7beb4ba7393fe2ba97633, type: 3}
       propertyPath: m_Name
       value: MusicPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175192803640265505, guid: a032b5b92fb7beb4ba7393fe2ba97633, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4175192803640265507, guid: a032b5b92fb7beb4ba7393fe2ba97633, type: 3}
       propertyPath: m_RootOrder

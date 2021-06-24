@@ -34,6 +34,12 @@ public class UIControl : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
+
     public void replay()
     {
         SceneManager.LoadScene(0);
